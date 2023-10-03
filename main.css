@@ -1,0 +1,157 @@
+/* main.css */
+
+/* ตั้งค่าระยะห่างของเนื้อหา */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* กำหนดสีพื้นหลัง */
+body {
+    background-color: #f0f2f5;
+}
+
+/* กำหนดสีขอบและระยะห่างขอบ */
+.container {
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+}
+
+/* กำหนดสีเส้นขีดรายการ */
+.navbar {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 8px;
+}
+
+/* กำหนดสีตัวอักษรลิงค์ที่มีตำแหน่งเมนูด้านบน */
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+/* กำหนดสีรายการเมนูและสีข้อความเมนู */
+.navbar a:hover {
+    color: #eff2f5;
+}
+
+/* ปรับขนาดและรูปแบบของโพสต์ */
+.post {
+    background-color: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    margin: 16px 0;
+    padding: 16px;
+}
+
+/* ปรับสีข้อความและลิงค์ในโพสต์ */
+.post-content {
+    color: #333;
+}
+
+.post-content a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+/* ปรับขนาดและรูปแบบของรูปภาพในโพสต์ */
+.post-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ปรับสีขอบของรูปภาพในโพสต์ */
+.post-image img {
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+}
+
+/* ปรับสีแท็ก "ถูกใจ" และ "แสดงความคิดเห็น" */
+.like-comment {
+    color: #1877f2;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.like-comment:hover {
+    text-decoration: underline;
+}
+
+/* กำหนดรูปแบบของแท็ก "แสดงความคิดเห็น" */
+.comment {
+    border-top: 1px solid #dddfe2;
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+/* กำหนดสีข้อความและลิงค์ในแท็ก "แสดงความคิดเห็น" */
+.comment-content {
+    color: #333;
+}
+
+.comment-content a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.comment-content a:hover {
+    text-decoration: underline;
+}
+/* main.css */
+
+/* ปรับสีพื้นหลังและสีขอบของปุ่ม Register */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* เพิ่มการเปลี่ยนสีพื้นหลังและการหมุนปุ่ม */
+}
+
+/* ปรับสีพื้นหลังและสีขอบของปุ่ม Reset */
+input[type="reset"] {
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* เพิ่มการเปลี่ยนสีพื้นหลังและการหมุนปุ่ม */
+}
+
+/* เมื่อเมาส์ชี้ (hover) ปุ่ม Register */
+input[type="submit"]:hover {
+    background-color: #cd67b7;
+    transform: scale(1.05); /* เพิ่มการขยายขนาดปุ่มเล็กน้อย */
+}
+
+/* เมื่อเมาส์ชี้ (hover) ปุ่ม Reset */
+input[type="reset"]:hover {
+    background-color: #dddfe2;
+    transform: scale(1.05); /* เพิ่มการขยายขนาดปุ่มเล็กน้อย */
+}
+/* main.css */
+
+/* กำหนดส่วนของเนื้อหาหลักเป็น flex container */
+body {
+    display: flex;
+    justify-content: center; /* จัดเนื้อหาให้อยู่ตรงกลางตามแนวนอน */
+    align-items: center; /* จัดเนื้อหาให้อยู่ตรงกลางตามแนวตั้ง */
+    height: 100vh; /* ทำให้ส่วนเนื้อหาเต็มหน้าจอ */
+}
+
+/* กำหนดความกว้างของ container */
+.container {
+    width: 400px; /* ปรับขนาด container ตามความต้องการ */
+}
